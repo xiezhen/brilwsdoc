@@ -16,25 +16,48 @@ div.warn {
     border-left: 5px solid #dfb5b4;
     padding: 0.5em;
 }
+div.cmdlines{
+    margin-bottom:1em; 
+    margin-top: 1em; 
+    margin-left: 3em; 
+    color:#bc6916; 
+    font-weight: 200; 
+    font size: 9pt; 
+    line-height 200%; 
+    font-family: Monospace;
+    background-color:#ecf0f1;
+}
 h1 { 
-    cont-family: Helvetica, serif;
+    margin-bottom:1em;
+    margin-top: 1em;
+    font-family: Helvetica, serif;
     color: #444; 
 }
-h2 { color: #444; }
+h2 { 
+    margin-bottom:1em;
+    margin-top:1em;
+    color: #444; 
+}
 h4{
-    margin-top:12px;
-    margin-bottom:3px;
+    margin-top:1em;
+    margin-bottom:1em;
+    font-size:18pt;
 }
 div.text_cell_render{
    font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
    line-height: 145%;
-   font-size: 130%;
+   font-size: 100%;
    width:800px;
    margin-left:auto;
    margin-right:auto;
 }
 .CodeMirror{
     font-family: "Source Code Pro", source-code-pro, Consolas,monospace;
+    font-size: 9pt;
+    font-weight: 300;
+    color: #4057A1;
+    margin-bottom: .5em;
+    margin-top: 0.5em;
 }
 .prompt{
     display: None;

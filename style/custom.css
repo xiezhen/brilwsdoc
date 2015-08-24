@@ -76,4 +76,35 @@ div.text_cell_render{
 .warning{
     color: rgt(240, 20, 20)
 }
+
+div.mynavbar{
+    max-width: 50em;
+    margin: 0;
+    background: #000;
+    padding: 0;
+}
+.my-nav{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.my-nav li{
+    display: inline;
+    margin: 0;
+    float: left;
+}
+
+a.my-nav:link, a.my-nav:visited { 
+    display: block;
+    padding: .7em 1.2em;
+    font-weight: bold;
+    color: white; 
+    background-color: #444;
+}
+a.my-nav:focus { color: black; background-color: white; }
+a.my-nav:hover { color: white; background-color: green; }
+a.my-nav:active { color: white: background-color: red; }
+
 </style>
+

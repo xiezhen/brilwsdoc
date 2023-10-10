@@ -1,0 +1,47 @@
+There is a major release of brilws 3.8.1. Software update is not mandatory. The documentation is updated in https://cms-service-lumi.web.cern.ch/cms-service-lumi/brilwsdoc.html
+
+Release 3.8.1 has no functional change and it is brought to be compatible with python3.10. Due to major differences between python3.7 and python>=3.10, we dropped support for python2 from this release. The last python2 compatible software is version 3.7.4. Although moving to python3 is encouraged, as long as there is no change in the brilws functionality, you can stay with 3.7.4. The documentation matching old versions can be found in the "Docs" tab under the document title.
+  
+Light users of bril commandline tools are encouraged to use the docker image method and skip reading the message below.
+
+The instruction for the virtual environment based method is the following: 
+
+rm -rf $HOME/.local/{bin,lib} 
+
+/cvmfs/cms-bril.cern.ch/brilconda3/bin/pip install --user brilws==3.8.1
+
+Brilconda environments compatible to this release can be found in /cvmfs/cms-bril.cern.ch/brilconda3 and brilconda310
+
+Above instruction does not cover all user installation scenarios, for more complicated use cases please refer to the documentation.
+
+
+=== brilcalc 3.8.1 changes ===
+
+Made brilcalc compatible with python3.10, changes are backward compatible with python3.7 but not with python2
+
+Release python3.10-based environment Brilconda-3.3.0: changed core construct to mambaforge and minimised the number of custom build packages ; added PyROOT to MacOSX installer
+
+Fixed an oracle float type translation error in sqlalchemy-frontier binding in Brilconda-3.3.0.
+
+Brilconda 3.3.0 release note
+
+There is a new release of BRIL python environment brilconda-3.3.0. It's based on python 3.10 using mambaforge as core. Custombuilt packages are reduced to minimal and PyROOT is added to the MacOSX installer. BRIL people are invited to test this version of Brilconda for VDM framework and other analysis and let me know any problems.    
+
+To find more information about packages in the environment see:
+conda list --help
+
+.cern.ch installation location: /cvmfs/cms-bril.cern.ch/brilconda310
+.cms installation location: /brilpro/brilconda310
+standalone installer download url: 
+     https://cern.ch/cmslumisw/installers/linux-64/Brilconda-3.3.0-0-Linux-x86_64.sh
+     https://cern.ch/cmslumisw/installers/macos-64/Brilconda-3.3.0-0-MacOSX-x86_64.sh
+  
+=== brilconda 3.3.0 changes ===
+
+Changed core construct to python 3.10 and mambaforge
+
+Minimised the number of custom build packages 
+
+added PyROOT to MacOSX installer
+
+Fixed an oracle float type translation error in sqlalchemy-frontier binding
